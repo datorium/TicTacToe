@@ -19,12 +19,23 @@ namespace TicTacToe
         {
             InitializeComponent();
             InitializeGrid();
+            InitializeCells();
         }
 
         private void InitializeGrid()
         {
             Grid.BackColor = Color.LightCoral;
             Grid.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
+        }
+
+        private void InitializeCells()
+        {
+            string labelName;
+            for(int i = 1; i <= 9; i++)
+            {
+                labelName = "label" + i;
+                Grid.Controls[labelName].Text = string.Empty;
+            }
         }
 
         private void Player_Click(object sender, EventArgs e)
@@ -38,7 +49,7 @@ namespace TicTacToe
             {
                 label.Text = "O";
             }
-            xPlayerTurn = !xPlayerTurn;            
+            xPlayerTurn = !xPlayerTurn;         
         }
     }
 }
