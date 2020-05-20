@@ -23,5 +23,10 @@ namespace TicTacToe
             Grid.BackColor = Color.LightCoral;
             Grid.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
         }
+
+        private void Player_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
