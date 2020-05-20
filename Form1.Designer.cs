@@ -90,6 +90,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "D";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.Player_Click);
             // 
             // label3
             // 
@@ -102,6 +103,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "D";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.Player_Click);
             // 
             // label4
             // 
@@ -114,6 +116,7 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "D";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.Player_Click);
             // 
             // label5
             // 
@@ -126,6 +129,7 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "D";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.Player_Click);
             // 
             // label6
             // 
@@ -138,6 +142,7 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "D";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.Player_Click);
             // 
             // label7
             // 
@@ -150,6 +155,7 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "D";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.Player_Click);
             // 
             // label8
             // 
@@ -162,6 +168,7 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "D";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Click += new System.EventHandler(this.Player_Click);
             // 
             // label9
             // 
@@ -174,6 +181,7 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "D";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.Player_Click);
             // 
             // Form1
             // 

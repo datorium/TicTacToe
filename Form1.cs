@@ -26,7 +26,8 @@ namespace TicTacToe
 
         private void Player_Click(object sender, EventArgs e)
         {
-
+            Label label = (Label)sender;
+            label.Text = "X";
         }
     }
 }
