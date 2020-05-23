@@ -34,13 +34,14 @@ namespace TicTacToe
             turnCount = 0;
         }
 
+
         private void InitializeCells()
         {
             string labelName;
             for(int i = 1; i <= 9; i++)
             {
                 labelName = "label" + i;
-                Grid.Controls[labelName].Text = string.Empty;
+                Grid.Controls[labelName].Text = String.Empty;
             }            
         }
 
@@ -48,7 +49,7 @@ namespace TicTacToe
         {
             Label label = (Label)sender;
             
-            if(label.Text != string.Empty)
+            if(label.Text != String.Empty)
             {
                 return;
             }
@@ -70,14 +71,14 @@ namespace TicTacToe
         private void CheckForWin()
         {
             if (
-                    (label1.Text == label2.Text && label2.Text == label3.Text && label1.Text != string.Empty) ||
-                    (label4.Text == label5.Text && label5.Text == label6.Text && label4.Text != string.Empty) ||
-                    (label7.Text == label8.Text && label8.Text == label9.Text && label7.Text != string.Empty) ||
-                    (label1.Text == label4.Text && label4.Text == label7.Text && label1.Text != string.Empty) ||
-                    (label2.Text == label5.Text && label5.Text == label8.Text && label2.Text != string.Empty) ||
-                    (label3.Text == label6.Text && label6.Text == label9.Text && label3.Text != string.Empty) ||
-                    (label1.Text == label5.Text && label5.Text == label9.Text && label1.Text != string.Empty) ||
-                    (label3.Text == label5.Text && label5.Text == label7.Text && label3.Text != string.Empty)
+                    (label1.Text == label2.Text && label2.Text == label3.Text && label1.Text != String.Empty) ||
+                    (label4.Text == label5.Text && label5.Text == label6.Text && label4.Text != String.Empty) ||
+                    (label7.Text == label8.Text && label8.Text == label9.Text && label7.Text != String.Empty) ||
+                    (label1.Text == label4.Text && label4.Text == label7.Text && label1.Text != String.Empty) ||
+                    (label2.Text == label5.Text && label5.Text == label8.Text && label2.Text != String.Empty) ||
+                    (label3.Text == label6.Text && label6.Text == label9.Text && label3.Text != String.Empty) ||
+                    (label1.Text == label5.Text && label5.Text == label9.Text && label1.Text != String.Empty) ||
+                    (label3.Text == label5.Text && label5.Text == label7.Text && label3.Text != String.Empty)
                 )
             {
                 GameOver();
