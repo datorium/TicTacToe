@@ -42,6 +42,7 @@ namespace TicTacToe
             {
                 labelName = "label" + i;
                 Grid.Controls[labelName].Text = String.Empty;
+                Grid.Controls[labelName].BackColor = Color.Transparent;
             }            
         }
 
@@ -90,30 +91,27 @@ namespace TicTacToe
         {
             if (label1.Text == label2.Text && label1.Text == label3.Text && label1.Text != "")
             {
-                label1.BackColor = label2.BackColor = label3.BackColor = Color.DeepPink;
-
+                ChangeCellColors(label1, label2, label3, Color.Purple);
             }
             else if (label4.Text == label5.Text && label4.Text == label6.Text && label4.Text != "")
             {
-                label4.BackColor = label5.BackColor = label6.BackColor = Color.DeepPink;
+                ChangeCellColors(label4, label5, label6, Color.Purple);
             }
             else if (label7.Text == label8.Text && label7.Text == label9.Text && label7.Text != "")
             {
-                label7.BackColor = label8.BackColor = label9.BackColor = Color.DeepPink;
+                ChangeCellColors(label7, label8, label9, Color.Purple);
             }
             else if (label1.Text == label4.Text && label1.Text == label7.Text && label1.Text != "")
             {
-                label1.BackColor = label4.BackColor = label7.BackColor = Color.DeepPink;
+                ChangeCellColors(label1, label4, label7, Color.Purple);
             }
             else if (label2.Text == label5.Text && label2.Text == label8.Text && label2.Text != "")
             {
-                label2.BackColor = label5.BackColor = label8.BackColor = Color.DeepPink;
-
+                ChangeCellColors(label2, label5, label8, Color.Purple);
             }
             else if (label3.Text == label6.Text && label3.Text == label9.Text && label3.Text != "")
             {
-                label3.BackColor = label6.BackColor = label9.BackColor = Color.DeepPink;
-
+                ChangeCellColors(label3, label6, label9, Color.Purple);
             }
             else if (label1.Text == label5.Text && label1.Text == label9.Text && label1.Text != "")
             {
@@ -125,7 +123,6 @@ namespace TicTacToe
             }
 
         }
-
         private void ChangeCellColors(Label firstLabel, Label secondLabel, Label thirdLabel, Color color)
         {
             firstLabel.BackColor = color;
@@ -155,7 +152,7 @@ namespace TicTacToe
                 winner = "O";
             }
             WinnerCellsChangeColor();
-            //MessageBox.Show(winner  + " wins!");
+            MessageBox.Show(winner  + " wins!");
             RestartGame();
         }
     }
