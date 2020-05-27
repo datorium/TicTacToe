@@ -83,5 +83,8 @@
   <ItemGroup>
     <None Include="Resources\click_sound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep_sound.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
