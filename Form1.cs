@@ -51,20 +51,24 @@ namespace TicTacToe
 
         private void Player_Click(object sender, EventArgs e)
         {
-            PictureBox pic = (PictureBox)sender;
+            PictureBox picture = (PictureBox)sender;
             
-            if(pic.Tag != String.Empty)
+            if(picture.Tag != String.Empty)
             {
                 return;
             }
             
             if (xPlayerTurn)
             {
-                pic.Tag = "X";
+                picture.Tag = "X";
+                pic = picture;
+                timer1.Start();
             }
             else
             {
-                pic.Tag = "O";
+                picture.Tag = "O";
+                pic = picture;
+                timer1.Start();
             }
             turnCount++;
             PlaySound("beep_sound");
