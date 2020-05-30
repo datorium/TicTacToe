@@ -44,8 +44,11 @@ namespace TicTacToe
             for(int i = 1; i <= 9; i++)
             {
                 labelName = "pictureBox" + i;
-                Grid.Controls[labelName].Tag = String.Empty;
-                Grid.Controls[labelName].BackColor = Color.Transparent;
+                PictureBox picture;
+                picture = (PictureBox)Grid.Controls[labelName];
+                picture.Tag = String.Empty;
+                picture.Image = null;
+                picture.BackColor = Color.Transparent;
             }            
         }
 
